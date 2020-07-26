@@ -1,0 +1,21 @@
+		AVERAGE PERFORMANCE RESULTS (BY PAGE FRAME):
+
+Page Frame Size 3:
+	FIFO average performance: 19
+	LRU average performance: 19
+	Optimal average performance: 18
+
+Page Frame Size 4:
+	FIFO average performance: 15
+	LRU average performance: 15
+	Optimal average performance: 14
+
+Page Frame Size 5:
+	FIFO average performance: 13
+	LRU average performance: 13
+	Optimal average performance: 11
+
+Page Frame Size 6:
+	FIFO average performance: 11
+	LRU average performance: 10
+	Optimal average performance: 9

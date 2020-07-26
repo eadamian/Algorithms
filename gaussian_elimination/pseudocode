@@ -1,0 +1,106 @@
+// Forward Elimination
+
+function FwdElimination(coeff : array(n,n), const : vector(n))
+  for k <- 1 to (n - 1)
+    for i <- k + 1 to n
+      mult := coeff[i][k] / coeff[k][k]
+      for j <- k + 1 to n
+        coeff[i][j] := coeff[i][j] - mult * coeff[k][j]
+      end for     
+      const[i] := const[i] - mult * const[k]
+    end for
+  end for
+end function
+
+// Back Substitution
+
+function BackSubst(coeff : array(n,n), const : vector(n), sol : vector(n))
+  sol[n] := const[n] / coeff[n][n]
+  for i <- n - 1 to 1
+    sum := const[i]
+    for j <- i + 1 to n
+      sum := sum - coeff[i][j] * sol[j]
+    end for
+    sol[i] := sum / coeff[i][i]
+  end for
+end function
+
+// Naive Gaussian algorithm
+
+function NaiveGaussian(coeff : array(n,n), const : vector(n))
+  sol := new array(n,n)
+  call FwdElimination(coeff,const)
+  call BackSubst(coeff, const, sol)
+end function
+
+
+
+Gaussian Elimination with Scaled Partial Pivoting
+
+// Forward Elimination
+
+function SPPFwdElimination(coeff : array(n,n), const : vector(n), ind : vector(n))
+  scaling := new vector(n) // vector of scaling factors
+
+  // Initialize index and scaling vectors
+  for i <- 1 to n
+    smax := 0
+
+    for j <- 1 to n
+      smax := max(smax,|coeff[i][j]|) // find coefficient with greatest absolute value
+    end for
+
+    scaling[i] := smax    
+  end for
+
+  for k <- 1 to n - 1
+    rmax := 0
+    maxInd := k
+
+    for i <- k to n
+      r := |coeff[ind[i]][k] / scaling[ind[i]]| // ratio of coefficient to scaling factor
+      if (r > rmax) then
+        rmax := r
+        maxInd := i
+      end if
+    end for
+    swap(ind[maxInd], ind[k])
+
+    for i <- k + 1 to n
+      mult := coeff[ind[i]][k] / coeff[ind[k]][k]
+      
+      for j <- k + 1 to n
+        coeff[ind[i]][j] := coeff[ind[i]][j] - mult * coeff[ind[k]][j]
+      end for
+
+      const[ind[i]] := const[ind[i]] - mult * const[ind[k]]
+    end for
+  end for
+end function
+
+// Back Substitution
+
+function SPPBackSubst(coeff : array(n,n), const : vector(n), sol : vector(n), ind : vector(n))
+  sol[n] := const[ind[n]] / coeff[ind[n]][n]
+  for i <- n - 1 to 1
+    sum := const[ind[i]]
+    for j <- i + 1 to n
+      sum := sum - coeff[ind[i]][j] * sol[j]
+    end for
+    sol[i] := sum / coeff[ind[i]][i]
+  end for
+end function
+
+// SPP Gaussian Algorithm
+
+function SPPGaussian(coeff : array(n,n), const : vector(n))
+  sol := new array(n,n)
+  ind := new vector(n)
+
+  for i <- 1 to n
+    ind[i] := i
+  end for
+
+  call SPPFwdElimination(coeff,const,ind)
+  call SPPBackSubst(coeff,const,sol,ind)
+end function

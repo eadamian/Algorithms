@@ -1,0 +1,50 @@
+void knapsack2 (int n, const int p[], const int w[], int W, int& maxprofit)
+{								
+	queue_of_node Q;
+	node u, v;
+
+	initialize (Q);						// Initialize Q to be empty.
+	v.level = 0; v.profit = 0; v.weight = 0;
+								// Initialize v to be the root.
+	maxprofit = 0;
+	enqueue(Q, v);
+	while (!empty(Q)){
+		dequeue(Q, v);
+		u.level = v.level + 1;				// Set u to a child of v.
+		u.weight = v.weight + w[u.level];		// Set u to the child
+		u.profit = v.profit + p[u.level];		// that includes the
+								// next item.
+		if(u.weight <= W && u.profit > maxprofit)
+			maxprofit = u.profit;
+		if(bound(u) > maxprofit)
+			enqueue(Q, u);
+		u.weight = v.weight;				// Set u to the child that
+		u.profit = v.profit;				// does not include the
+		if(bound(u) > maxprofit)			// next item.
+			enqueue(Q, u);
+	}
+}
+
+float bound (node u)
+{
+	index j, k;
+	int totweight;
+	float result;
+	if(u.weight >= W)
+		return 0;
+	else{
+		result = u.profit;
+		j = u.level + 1;
+		totweight = u.weight;
+		while(j <= n && totweight + w[j] <= W){
+			totweight = totweight + w[j];		// Grab as many items
+			result = result + p[j];			// as possible.
+			j++;
+		}
+		k = j;						// Use k for consistency
+		if(k <= n)					// with formula in text.
+			result = result + (W - totweight) * p[k]/w[k];
+								// Grab fraction of kth
+		return result;					// item.
+	}
+}

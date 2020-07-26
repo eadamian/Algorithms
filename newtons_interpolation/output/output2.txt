@@ -1,0 +1,14 @@
+****************************************************************************
+NEWTON'S INTERPOLATION
+
+- If you would like to exit the program, enter 'Q' or 'q'.
+Please provide a value (such as 4 or 5) to be used to evaluate the polynomial : 10
+The evaluation value is:  -26.999999999999996
+Please provide a value (such as 4 or 5) to be used to evaluate the polynomial : 100
+The evaluation value is:  -1416334.7999999998
+Please provide a value (such as 4 or 5) to be used to evaluate the polynomial : 15
+The evaluation value is:  -318.0999999999999
+Please provide a value (such as 4 or 5) to be used to evaluate the polynomial : Q
+Exiting the program.
+
+Process finished with exit code 0

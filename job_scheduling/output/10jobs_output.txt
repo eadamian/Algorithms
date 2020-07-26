@@ -1,0 +1,117 @@
+ericadamian@Erics-MBP-2 ~ % cd desktop
+ericadamian@Erics-MBP-2 desktop % javac Main.java
+ericadamian@Erics-MBP-2 desktop % java Main 10jobs.txt
+**********************************************************************
+First-Come-First-Serve (FCFS): 
+
+Job		Start Time	End Time	Job Description
+
+Job1		0		10		Job1 completed at time 10
+Job2		10		15		Job2 completed at time 15
+Job3		15		23		Job3 completed at time 23
+Job4		23		41		Job4 completed at time 41
+Job5		41		53		Job5 completed at time 53
+Job6		53		68		Job6 completed at time 68
+Job7		68		72		Job7 completed at time 72
+Job8		72		81		Job8 completed at time 81
+Job9		81		87		Job9 completed at time 87
+Job10		87		92		Job10 completed at time 92
+
+Average turnaround time (FCFS): 542.00 / 10 = 54.20
+**********************************************************************
+Shortest-Job-First (SJF): 
+
+Job		Start Time	End Time	Job Description
+
+Job7		0		4		Job7 completed at time 4
+Job2		4		9		Job2 completed at time 9
+Job10		9		14		Job10 completed at time 14
+Job9		14		20		Job9 completed at time 20
+Job3		20		28		Job3 completed at time 28
+Job8		28		37		Job8 completed at time 37
+Job1		37		47		Job1 completed at time 47
+Job5		47		59		Job5 completed at time 59
+Job6		59		74		Job6 completed at time 74
+Job4		74		92		Job4 completed at time 92
+
+Average turnaround time (SJF): 384.00 / 10 = 38.40
+**********************************************************************
+Round Robin with time slice = 2
+Job		Start Time	End Time	Job Description
+Job1		0		2
+Job2		2		4
+Job3		4		6
+Job4		6		8
+Job5		8		10
+Job6		10		12
+Job7		12		14
+Job8		14		16
+Job9		16		18
+Job10		18		20
+Job1		20		22
+Job2		22		24
+Job3		24		26
+Job4		26		28
+Job5		28		30
+Job6		30		32
+Job7		32		34		Job7 completed at time 34
+Job8		34		36
+Job9		36		38
+Job10		38		40
+Job1		40		42
+Job2		42		43		Job2 completed at time 43
+Job3		43		45
+Job4		45		47
+Job5		47		49
+Job6		49		51
+Job8		51		53
+Job9		53		55		Job9 completed at time 55
+Job10		55		56		Job10 completed at time 56
+Job1		56		58
+Job3		58		60		Job3 completed at time 60
+Job4		60		62
+Job5		62		64
+Job6		64		66
+Job8		66		68
+Job1		68		70		Job1 completed at time 70
+Job4		70		72
+Job5		72		74
+Job6		74		76
+Job8		76		77		Job8 completed at time 77
+Job4		77		79
+Job5		79		81		Job5 completed at time 81
+Job6		81		83
+Job4		83		85
+Job6		85		87
+Job4		87		89
+Job6		89		90		Job6 completed at time 90
+Job4		90		92		Job4 completed at time 92
+
+Average turnaround time (RR): 658.00 / 10 = 65.80
+**********************************************************************
+Round Robin with time slice = 5
+Job		Start Time	End Time	Job Description
+Job1		0		5
+Job2		5		10		Job2 completed at time 10
+Job3		10		15
+Job4		15		20
+Job5		20		25
+Job6		25		30
+Job7		30		34		Job7 completed at time 34
+Job8		34		39
+Job9		39		44
+Job10		44		49		Job10 completed at time 49
+Job1		49		54		Job1 completed at time 54
+Job3		54		57		Job3 completed at time 57
+Job4		57		62
+Job5		62		67
+Job6		67		72
+Job8		72		76		Job8 completed at time 76
+Job9		76		77		Job9 completed at time 77
+Job4		77		82
+Job5		82		84		Job5 completed at time 84
+Job6		84		89		Job6 completed at time 89
+Job4		89		92		Job4 completed at time 92
+
+Average turnaround time (RR): 622.00 / 10 = 62.20
+**********************************************************************

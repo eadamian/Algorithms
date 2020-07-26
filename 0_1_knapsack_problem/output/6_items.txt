@@ -1,0 +1,36 @@
+ericadamian@Erics-MBP-2 desktop % java Main
+How many items are there to potentially take? 6
+What is the weight of item 1? 15
+What is the profit of item 1? 12
+
+What is the weight of item 2? 20
+What is the profit of item 2? 16
+
+What is the weight of item 3? 18
+What is the profit of item 3? 13
+
+What is the weight of item 4? 21
+What is the profit of item 4? 9
+
+What is the weight of item 5? 8
+What is the profit of item 5? 14
+
+What is the weight of item 6? 16
+What is the profit of item 6? 20
+
+What is the maximum weight the bag can hold? 100
+
+Brute Force: 
+Max profit: 84.0
+Nodes visited: 127
+Best set: [yes, yes, yes, yes, yes, yes]
+
+Backtracking: 
+Max profit: 84.0
+Nodes visited: 13
+Best set: [yes, yes, yes, yes, yes, yes]
+
+Branch and Bound: 
+Max profit: 84.0
+Nodes visited: 13
+ericadamian@Erics-MBP-2 desktop % 

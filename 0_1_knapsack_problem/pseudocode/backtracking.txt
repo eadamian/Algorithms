@@ -1,0 +1,42 @@
+void knapsack (index i, int profit, int weight)
+{
+	if (weight <= W && profit > maxprofit){			// This set is best
+		maxprofit = profit;				// so far.
+		numbest = i;					// Set numbest to  		
+		bestset = include;				// number of items 	
+	}							// considered. Set
+								// bestset to this
+								// solution.	
+	if (promising (i)){ 		
+		include [i + 1] = "yes"; 			// Include w[i + 1]. 		
+		knapsack (i + 1, profit + p[i + 1], weight + w[i + 1]); 		
+		include [i + 1] = "no"; 			//Do not include 		
+		knapsack (i + 1, profit, weight);		// w[i + 1].
+	}
+}
+
+bool promising (index i)
+{ 	
+	index j, k;
+	int totweight;
+	double bound;
+	
+	if (weight >= W)				// Node is promising only
+		return false;				// if we should expand to
+	else{						// its children. There must
+		j = i + 1				// be some capacity left for	
+		bound = profit;				// the children.
+		totweight = weight; 		
+		while (j <= n && totweight + w[j] <= W){
+							// Grab as many item as 			
+			totweight = totweight + w[j];	// possible. 			
+			bound = bound + p[j]; 			
+			j ++;
+		} 		
+		k = j;					// Use k for consistency 		
+		if (k <= n)				// with formula in text.
+			bound = bound + (W - totweight) * p[k]/w[k];
+							// Grab fraction of kth 		
+		return bound > maxprofit;		// item.
+	}
+}

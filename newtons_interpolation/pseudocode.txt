@@ -1,0 +1,6 @@
+Pseudo code for Newton's Interpolation:
+
+function Coeff(xs : vector(n+1), ys : vector(n+1), cs : vector(n+1))   for i <- 0 to n     cs[i] := ys[i]   end for    for j <- 1 to n     for i <- n down to j       cs[i] := (cs[i] - cs[i-1]) / (xs[i] - x[i-j])     end for   end for end function
+
+
+function EvalNewton(xs : vector(n+1), cs : vector(n+1), z : float)   result := cs[n]    for i <- (n-1) down to 0     result := result * (z - xs[i]) + cs[i]   end for    return result end function

@@ -1,0 +1,79 @@
+Last login: Wed Apr  1 00:37:18 on ttys000
+/Users/ericadamian/.zshrc:20: unmatched "
+ericadamian@Erics-MBP-2 ~ % cd desktop
+ericadamian@Erics-MBP-2 desktop % javac Main.java
+ericadamian@Erics-MBP-2 desktop % java Main 5jobs.txt
+**********************************************************************
+First-Come-First-Serve (FCFS): 
+
+Job		Start Time	End Time	Job Description
+
+Job1		0		10		Job1 completed at time 10
+Job2		10		15		Job2 completed at time 15
+Job3		15		23		Job3 completed at time 23
+Job4		23		41		Job4 completed at time 41
+Job5		41		53		Job5 completed at time 53
+
+Average turnaround time (FCFS): 142.00 / 5 = 28.40
+**********************************************************************
+Shortest-Job-First (SJF): 
+
+Job		Start Time	End Time	Job Description
+
+Job2		0		5		Job2 completed at time 5
+Job3		5		13		Job3 completed at time 13
+Job1		13		23		Job1 completed at time 23
+Job5		23		35		Job5 completed at time 35
+Job4		35		53		Job4 completed at time 53
+
+Average turnaround time (SJF): 129.00 / 5 = 25.80
+**********************************************************************
+Round Robin with time slice = 2
+Job		Start Time	End Time	Job Description
+Job1		0		2
+Job2		2		4
+Job3		4		6
+Job4		6		8
+Job5		8		10
+Job1		10		12
+Job2		12		14
+Job3		14		16
+Job4		16		18
+Job5		18		20
+Job1		20		22
+Job2		22		23		Job2 completed at time 23
+Job3		23		25
+Job4		25		27
+Job5		27		29
+Job1		29		31
+Job3		31		33		Job3 completed at time 33
+Job4		33		35
+Job5		35		37
+Job1		37		39		Job1 completed at time 39
+Job4		39		41
+Job5		41		43
+Job4		43		45
+Job5		45		47		Job5 completed at time 47
+Job4		47		49
+Job4		49		51
+Job4		51		53		Job4 completed at time 53
+
+Average turnaround time (RR): 195.00 / 5 = 39.00
+**********************************************************************
+Round Robin with time slice = 5
+Job		Start Time	End Time	Job Description
+Job1		0		5
+Job2		5		10		Job2 completed at time 10
+Job3		10		15
+Job4		15		20
+Job5		20		25
+Job1		25		30		Job1 completed at time 30
+Job3		30		33		Job3 completed at time 33
+Job4		33		38
+Job5		38		43
+Job4		43		48
+Job5		48		50		Job5 completed at time 50
+Job4		50		53		Job4 completed at time 53
+
+Average turnaround time (RR): 176.00 / 5 = 35.20
+**********************************************************************

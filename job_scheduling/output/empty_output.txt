@@ -1,0 +1,5 @@
+ericadamian@Erics-MBP-2 ~ % cd desktop
+ericadamian@Erics-MBP-2 desktop % javac Main.java
+ericadamian@Erics-MBP-2 desktop % java Main empty.txt
+ERROR: File is empty. Please try again.
+ericadamian@Erics-MBP-2 desktop %

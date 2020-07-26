@@ -1,0 +1,18 @@
+****************************************************************************
+NEWTON'S INTERPOLATION
+
+- If you would like to exit the program, enter 'Q' or 'q'.
+Please provide a value (such as 4 or 5) to be used to evaluate the polynomial : 3
+The evaluation value is:  1.0
+Please provide a value (such as 4 or 5) to be used to evaluate the polynomial : 1
+The evaluation value is:  0.12
+Please provide a value (such as 4 or 5) to be used to evaluate the polynomial : 0
+The evaluation value is:  -0.30000000000000004
+Please provide a value (such as 4 or 5) to be used to evaluate the polynomial : 4
+The evaluation value is:  1.9999999999999998
+Please provide a value (such as 4 or 5) to be used to evaluate the polynomial : 7
+The evaluation value is:  2.5
+Please provide a value (such as 4 or 5) to be used to evaluate the polynomial : w
+Please enter a valid integer. Exiting the program.
+
+Process finished with exit code 0
