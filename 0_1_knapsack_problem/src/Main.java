@@ -31,7 +31,6 @@ public class Main{
             System.out.println();
 
             // adding our items to the arraylist
-            item.setRatio();
             itemList.add(item);
         }
 
