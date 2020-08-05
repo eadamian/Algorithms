@@ -2,22 +2,16 @@
 public class item{
 
     // private variables for item class
-    private int ratio;
     private double profit;
     private double weight;
 
     // constructor
     public item(){
-        this.ratio = (int) (profit / weight);
         this.profit = 0;
         this.weight = 0;
     }
 
     // setters
-    public void setRatio() {
-        this.ratio = (int) (profit / weight);
-    }
-
     public void setProfit(double profit){
         this.profit = profit;
     }
@@ -27,8 +21,12 @@ public class item{
     }
 
     // getters
-    public double getRatio(){
-        return ratio;
+    public double getRatio(){ 
+        if (weight > 0){
+        	return (int) (profit / weight);
+        }else{
+        	return 0;
+        }
     }
 
     public double getProfit(){
