@@ -6,12 +6,12 @@
 
 # Input/Output
 
-- Input:
+Input:
 - javac Main.java
 - java Main
 
 - NOTE: This tests the first hardcoded array; second hardcoded array commented out in Main.java
 
-- Output:
+Output:
 - A sorted array for each sorting algorithm (5 total)
 - A runtime for each sorting algorithm (5 total)
