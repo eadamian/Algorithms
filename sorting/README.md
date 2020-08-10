@@ -14,4 +14,4 @@ Input:
 
 Output:
 - A sorted array for each sorting algorithm (5 total)
-- A runtime for each sorting algorithm (5 total)
+- A runtime for each sorting algorithm (5 total); 2^16 iterations ran for accurate results (compared to that of 1 iteration per sorting algorithm)
