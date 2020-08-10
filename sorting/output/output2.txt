@@ -1,0 +1,80 @@
+ericadamian@Erics-MBP-2 desktop % javac Main.java
+ericadamian@Erics-MBP-2 desktop % java Main
+
+*******************************************************************************
+	Sorting algorithms testing results (contains hardcoded values)
+		Runtime completed with 2^16 iterations
+*******************************************************************************
+
+Insertion Sort
+Sorted array: 	4 12 12 14 18 18 20 22 24 26 28 29 36 36 37 41 42 52 54 57 57 59 61 62 62 72 72 73 73 83 89 90 91 95 179 
+Runtime:	15.21872 ms
+
+Merge Sort
+Sorted array: 	4 12 12 14 18 18 20 22 24 26 28 29 36 36 37 41 42 52 54 57 57 59 61 62 62 72 72 73 73 83 89 90 91 95 179 
+Runtime:	164.909137 ms
+
+Quicksort1
+Sorted array: 	4 12 12 14 18 18 20 22 24 26 28 29 36 36 37 41 42 52 54 57 57 59 61 62 62 72 72 73 73 83 89 90 91 95 179 
+Runtime:	32.01631 ms
+
+Quicksort2
+Sorted array: 	4 12 12 14 18 18 20 22 24 26 28 29 36 36 37 41 42 52 54 57 57 59 61 62 62 72 72 73 73 83 89 90 91 95 179 
+Runtime:	51.248304 ms
+
+Quicksort3
+Sorted array: 	4 12 12 14 18 18 20 22 24 26 28 29 36 36 37 41 42 52 54 57 57 59 61 62 62 72 72 73 73 83 89 90 91 95 179 
+Runtime:	376.752056 ms
+ericadamian@Erics-MBP-2 desktop % java Main
+
+*******************************************************************************
+	Sorting algorithms testing results (contains hardcoded values)
+		Runtime completed with 2^16 iterations
+*******************************************************************************
+
+Insertion Sort
+Sorted array: 	4 12 12 14 18 18 20 22 24 26 28 29 36 36 37 41 42 52 54 57 57 59 61 62 62 72 72 73 73 83 89 90 91 95 179 
+Runtime:	12.076474 ms
+
+Merge Sort
+Sorted array: 	4 12 12 14 18 18 20 22 24 26 28 29 36 36 37 41 42 52 54 57 57 59 61 62 62 72 72 73 73 83 89 90 91 95 179 
+Runtime:	156.124874 ms
+
+Quicksort1
+Sorted array: 	4 12 12 14 18 18 20 22 24 26 28 29 36 36 37 41 42 52 54 57 57 59 61 62 62 72 72 73 73 83 89 90 91 95 179 
+Runtime:	31.231024 ms
+
+Quicksort2
+Sorted array: 	4 12 12 14 18 18 20 22 24 26 28 29 36 36 37 41 42 52 54 57 57 59 61 62 62 72 72 73 73 83 89 90 91 95 179 
+Runtime:	48.727684 ms
+
+Quicksort3
+Sorted array: 	4 12 12 14 18 18 20 22 24 26 28 29 36 36 37 41 42 52 54 57 57 59 61 62 62 72 72 73 73 83 89 90 91 95 179 
+Runtime:	361.599787 ms
+ericadamian@Erics-MBP-2 desktop % java Main
+
+*******************************************************************************
+	Sorting algorithms testing results (contains hardcoded values)
+		Runtime completed with 2^16 iterations
+*******************************************************************************
+
+Insertion Sort
+Sorted array: 	4 12 12 14 18 18 20 22 24 26 28 29 36 36 37 41 42 52 54 57 57 59 61 62 62 72 72 73 73 83 89 90 91 95 179 
+Runtime:	14.335769 ms
+
+Merge Sort
+Sorted array: 	4 12 12 14 18 18 20 22 24 26 28 29 36 36 37 41 42 52 54 57 57 59 61 62 62 72 72 73 73 83 89 90 91 95 179 
+Runtime:	159.423398 ms
+
+Quicksort1
+Sorted array: 	4 12 12 14 18 18 20 22 24 26 28 29 36 36 37 41 42 52 54 57 57 59 61 62 62 72 72 73 73 83 89 90 91 95 179 
+Runtime:	36.691799 ms
+
+Quicksort2
+Sorted array: 	4 12 12 14 18 18 20 22 24 26 28 29 36 36 37 41 42 52 54 57 57 59 61 62 62 72 72 73 73 83 89 90 91 95 179 
+Runtime:	54.906083 ms
+
+Quicksort3
+Sorted array: 	4 12 12 14 18 18 20 22 24 26 28 29 36 36 37 41 42 52 54 57 57 59 61 62 62 72 72 73 73 83 89 90 91 95 179 
+Runtime:	342.308801 ms
+ericadamian@Erics-MBP-2 desktop % 

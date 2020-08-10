@@ -1,0 +1,36 @@
+void mergesort (index low, index high)
+{
+	index mid;
+
+		if (low < high) {
+			mid = [(low + high) / 2];
+			mergesort(low, mid);
+			mergesort(mid + 1, high);
+			merge(low, mid, high);
+		}
+}
+
+void merge (index low, index mid, index high)
+{
+	index i, j, k;
+	keytype U[low...high];		// A local array need for the
+					// merging
+	i = low; j = mid + 1; k = low;
+	while (i <= mid && j <= high){
+		if (S[i] < S[j]) {
+			U[k] = S[i];
+			i++;
+		}
+		else {
+			U[k] = S[j];
+			j++;
+		}
+			k++;
+	}
+	if (i > mid)
+		move S[j] through S[high] to U[k] through U[high];
+	else
+		move S[i] through S[mid] to U[k] through U[high];
+	move U[low] through U[high] to S[low] through S[high];
+	
+}

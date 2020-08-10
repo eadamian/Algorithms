@@ -1,0 +1,80 @@
+ericadamian@Erics-MBP-2 desktop % javac Main.java
+ericadamian@Erics-MBP-2 desktop % java Main
+
+*******************************************************************************
+	Sorting algorithms testing results (contains hardcoded values)
+		Runtime completed with 2^16 iterations
+*******************************************************************************
+
+Insertion Sort
+Sorted array: 	5 11 12 19 23 26 31 64 52 63 65 93 
+Runtime:	12.7494 ms
+
+Merge Sort
+Sorted array: 	5 11 12 19 23 26 31 52 63 64 65 93 
+Runtime:	59.887779 ms
+
+Quicksort1
+Sorted array: 	5 11 12 19 23 26 31 52 63 64 65 93 
+Runtime:	19.174988 ms
+
+Quicksort2
+Sorted array: 	5 11 12 19 23 26 31 52 63 64 65 93 
+Runtime:	8.146455 ms
+
+Quicksort3
+Sorted array: 	5 11 12 19 23 26 31 52 63 64 65 93 
+Runtime:	135.543217 ms
+ericadamian@Erics-MBP-2 desktop % java Main
+
+*******************************************************************************
+	Sorting algorithms testing results (contains hardcoded values)
+		Runtime completed with 2^16 iterations
+*******************************************************************************
+
+Insertion Sort
+Sorted array: 	5 11 12 19 23 26 31 64 52 63 65 93 
+Runtime:	10.598799 ms
+
+Merge Sort
+Sorted array: 	5 11 12 19 23 26 31 52 63 64 65 93 
+Runtime:	58.65902 ms
+
+Quicksort1
+Sorted array: 	5 11 12 19 23 26 31 52 63 64 65 93 
+Runtime:	20.272285 ms
+
+Quicksort2
+Sorted array: 	5 11 12 19 23 26 31 52 63 64 65 93 
+Runtime:	4.863443 ms
+
+Quicksort3
+Sorted array: 	5 11 12 19 23 26 31 52 63 64 65 93 
+Runtime:	129.490991 ms
+ericadamian@Erics-MBP-2 desktop % java Main
+
+*******************************************************************************
+	Sorting algorithms testing results (contains hardcoded values)
+		Runtime completed with 2^16 iterations
+*******************************************************************************
+
+Insertion Sort
+Sorted array: 	5 11 12 19 23 26 31 64 52 63 65 93 
+Runtime:	8.925182 ms
+
+Merge Sort
+Sorted array: 	5 11 12 19 23 26 31 52 63 64 65 93 
+Runtime:	76.414701 ms
+
+Quicksort1
+Sorted array: 	5 11 12 19 23 26 31 52 63 64 65 93 
+Runtime:	15.889556 ms
+
+Quicksort2
+Sorted array: 	5 11 12 19 23 26 31 52 63 64 65 93 
+Runtime:	5.664962 ms
+
+Quicksort3
+Sorted array: 	5 11 12 19 23 26 31 52 63 64 65 93 
+Runtime:	138.961158 ms
+ericadamian@Erics-MBP-2 desktop % 
